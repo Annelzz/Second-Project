@@ -1,0 +1,11 @@
+<form method="POST" action="/decks/<%=@deck.id%>">
+  <input id="hidden" type="hidden" name="_method" value="patch" />
+
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" value="<%=@deck.name%>" />
+
+  <label for="cards">Cards</label>
+  <input type="text" id="cards" name="cards" value="<%=@deck.cards%>" />
+
+  <input type="submit" value="submit" />
+</form>

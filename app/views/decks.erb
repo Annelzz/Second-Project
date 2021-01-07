@@ -1,0 +1,17 @@
+<h1>Create a Deck!</h1>
+<p>Welcome to my deck assembler, <%= current_user.username%>!!. Because we were able to authenticate you, you can create a deck!!</p>
+
+
+<form method="POST" action="/decks">
+  
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name" />
+
+  <label for="cards">Cards</label>
+  <input type="text" id="cards" name="cards" />
+
+
+  <input type="submit" value="submit" />
+</form>
+
+<p><a href="/logout">Log Out</a></p>
